@@ -12,10 +12,11 @@
     <div id="output">Press the above button to generate your potential task.</div>
     <p>Odds are 1 to </p>
     <p>
-        <input type="text" class="defaultTextBox" id="screen"> </p>
+        <input type="text" class="defaultTextBox" id="inputNum"> </p>
     <p>
-        <button type="button" class="btn btn-warning btn-md" onclick="randomNum()">GO!</button>
+        <button type="button" onclick="randomNum('inputNum', 'output1')">GO!</button>
     </p>
+    <div id="output1"></div>
 </body>
 
 </html>

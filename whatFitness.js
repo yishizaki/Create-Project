@@ -1,93 +1,106 @@
-<<<<<<< HEAD
-function randomExercise() {
-    var randomNum = Math.ceil(Math.random() * 3);
-    if (randomNum == 1) {
-        return "Do 30 jumping jacks";
-    } else if (randomNum == 2) {
-        return "Do a minute wall sit";
-    } else {
-        return "";
-    }
-}
-/*
-    var 1 = "Do 30 jumping jacks";
-    2 = "Do 10 push ups";
-    3 = "Do a 1-minute wall sit";
-    4 = "Jog in place for one minute";
-    5 = "Do the plank for one minute";
-    6 = "Do ten squats";
-    return Math.ceil((Math.random() * 6));
-} */
+ function randomExercise(outputId) {
+     var randomNum = Math.ceil(Math.random() * 30);
+     var msg = "";
+     if (randomNum == 1) {
+         msg = "Do 20 jumping jacks.";
+     }
+     else if (randomNum == 2) {
+         msg = "Do 30 jumping jacks.";
+     }
+     else if (randomNum == 3) {
+         msg = "Do 40 jumping jacks.";
+     }
+     else if (randomNum == 4) {
+         msg = "Do 50 jumping jacks.";
+     }
+     else if (randomNum == 5) {
+         msg = "Do 10 push-ups.";
+     }
+     else if (randomNum == 6) {
+         msg = "Do 15 push-ups.";
+     }
+     else if (randomNum == 7) {
+         msg = "Do 20 push-ups.";
+     }
+     else if (randomNum == 8) {
+         msg = "Do 25 push-ups.";
+     }
+     else if (randomNum == 9) {
+         msg = "Do a 30-second wall sit.";
+     }
+     else if (randomNum == 10) {
+         msg = "Do a minute wall sit.";
+     }
+     else if (randomNum == 11) {
+         msg = "Do a minute and a half wall sit.";
+     }
+     else if (randomNum == 12) {
+         msg = "Do a two minute wall sit.";
+     }
+     else if (randomNum == 13) {
+         msg = "Do 10 squats.";
+     }
+     else if (randomNum == 14) {
+         msg = "Do 15 squats.";
+     }
+     else if (randomNum == 15) {
+         msg = "Do 20 squats.";
+     }
+     else if (randomNum == 16) {
+         msg = "Do 25 squats.";
+     }
+     else if (randomNum == 17) {
+         msg = "Do a 30-second plank on your hands.";
+     }
+     else if (randomNum == 18) {
+         msg = "Do a minute plank on your hands.";
+     }
+     else if (randomNum == 19) {
+         msg = "Do a minute and a half plank on your hands.";
+     }
+     else if (randomNum == 20) {
+         msg = "Do a 2 minute plank on your hands.";
+     }
+     else if (randomNum == 21) {
+         msg = "Do a 30-second plank on your elbows.";
+     }
+     else if (randomNum == 22) {
+         msg = "Do a minute plank on your elbows.";
+     }
+     else if (randomNum == 23) {
+         msg = "Do a minute and a half plank on your elbows.";
+     }
+     else if (randomNum == 24) {
+         msg = "Do a 2 minute plank on your elbows.";
+     }
+     else if (randomNum == 25) {
+         msg = "Jog in place for 30 seconds.";
+     }
+     else if (randomNum == 26) {
+         msg = "Jog in place for a minute.";
+     }
+     else if (randomNum == 27) {
+         msg = "Jog in place for a minute and a half.";
+     }
+     else if (randomNum == 28) {
+         msg = "Jog in place for 2 minutes.";
+     }
+     else if (randomNum == 29) {
+         msg = "Do 10 lunges.";
+     }
+     else {
+         msg = "Do 20 lunges.";
+     }
+     document.getElementById(outputId).innerHTML = msg;
+ }
 
-function randomNumber() {
-    var x = inputId;
-    return Math.ceil(Math.random() * x);
-=======
-function randomExercise(outputId) {
-
-    var randomNum = Math.ceil(Math.random() * 30);
-    var msg = "";
-    if (randomNum == 1) {
-        msg = "Do 20 jumping jacks.";
-    } else if (randomNum == 2) {
-        msg = "Do 30 jumping jacks.";
-    } else if (randomNum == 3) {
-        msg = "Do 40 jumping jacks.";
-    }else if (randomNum == 4) {
-        msg = "Do 50 jumping jacks.";
-    }else if (randomNum == 5) {
-        msg = "Do 10 push-ups.";
-    }else if (randomNum == 6) {
-        msg = "Do 15 push-ups.";
-    }else if (randomNum == 7) {
-        msg = "Do 20 push-ups.";
-    }else if (randomNum == 8) {
-        msg = "Do 25 push-ups.";
-    }else if (randomNum == 9) {
-        msg = "Do a 30-second wall sit.";
-    }else if (randomNum == 10) {
-        msg = "Do a minute wall sit.";
-    }else if (randomNum == 11) {
-        msg = "Do a minute and a half wall sit.";
-    }else if (randomNum == 12) {
-        msg = "Do a two minute wall sit.";
-    }else if (randomNum == 13) {
-        msg = "Do 10 squats.";
-    }else if (randomNum == 14) {
-        msg = "Do 15 squats.";
-    }else if (randomNum == 15) {
-        msg = "Do 20 squats.";
-    }else if (randomNum == 16) {
-        msg = "Do 25 squats.";
-    }else if (randomNum == 17) {
-        msg = "Do a 30-second plank on your hands.";
-    }else if (randomNum == 18) {
-        msg = "Do a minute plank on your hands.";
-    }else if (randomNum == 19) {
-        msg = "Do a minute and a half plank on your hands.";
-    }else if (randomNum == 20) {
-        msg = "Do a 2 minute plank on your hands.";
-    }else if (randomNum == 21) {
-        msg = "Do a 30-second plank on your elbows.";
-    }else if (randomNum == 22) {
-        msg = "Do a minute plank on your elbows.";
-    }else if (randomNum == 23) {
-        msg = "Do a minute and a half plank on your elbows.";
-    }else if (randomNum == 24) {
-        msg = "Do a 2 minute plank on your elbows.";
-    }else if (randomNum == 25) {
-        msg = "Jog in place for 30 seconds.";
-    }else if (randomNum == 26) {
-        msg = "Jog in place for a minute.";
-    }else if (randomNum == 27) {
-        msg = "Jog in place for a minute and a half.";
-    }else if (randomNum == 28) {
-        msg = "Jog in place for 2 minutes.";
-    }else if (randomNum == 29) {
-        msg = "fhgj";
-    }else {
-        msg = "dfhgj";
-    }
-    document.getElementById(outputId).innerHTML = msg;
->>>>>>> origin/master
+function validInterval(interval) {
+    var intervalLength = interval.length < 3;
+    return Math.ceil(Math.random() * interval;
 }
+
+ function randomNum(inputNum, outputId) {
+     var interval = Math.ceil(Math.random() * inputNum);
+     document.getElementById(outputId).innerHTML = interval;
+ }
+//go to uc7, unit 4
