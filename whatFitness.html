@@ -7,16 +7,17 @@
 <body>
     <p>What are the odds you...</p>
     <p>
-        <button type="button"  onclick="randomExercise('output')">Exercise</button>
+        <button type="button"  onclick="randomExercise('output1')">Exercise</button>
     </p>
-    <div id="output">Press the above button to generate your potential task.</div>
+    <div id="output1">Press the above button to generate your potential task.</div>
     <p>Odds are 1 to </p>
     <p>
-        <input type="text" class="defaultTextBox" id="inputNum"> </p>
+        <input type="text" id="inputInterval"> </p>
     <p>
-        <button type="button" onclick="randomNum('inputNum', 'output1')">GO!</button>
+        <button type="button" onclick="displayValidInterval('inputInterval', 'output')">GO!</button>
     </p>
-    <div id="output1"></div>
+    <div id="output"></div>
+
 </body>
 
 </html>

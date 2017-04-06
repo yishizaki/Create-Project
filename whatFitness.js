@@ -95,12 +95,23 @@
  }
 
 function validInterval(interval) {
-    var intervalLength = interval.length < 3;
-    return Math.ceil(Math.random() * interval;
-}
+     if (interval.length < 3) {
+             return "okay";
+         }
+         else {
+             return "Choose a number less than 100";
+         }
+     }
 
- function randomNum(inputNum, outputId) {
-     var interval = Math.ceil(Math.random() * inputNum);
-     document.getElementById(outputId).innerHTML = interval;
- }
-//go to uc7, unit 4
+function displayValidInterval(inputId, outputId) {
+     var input = document.getElementById(inputId).value;
+    var outputText = "";
+           if (validInterval(input) == "okay") {
+        outputText = Math.ceil(Math.random() * input);
+        document.getElementById(outputId).className = "valid";
+    } else {
+        outputText = "Choose a number less than 100";
+    document.getElementById(outputId).className = "invalid";
+    }
+    document.getElementById(outputId).innerHTML = outputText;
+}
