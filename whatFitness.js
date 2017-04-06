@@ -95,7 +95,7 @@
  }
 
 function validInterval(interval) {
-     if (interval < 10) {
+     if (interval <= 10 && interval > 1) {
              return "okay";
          }
          else {
