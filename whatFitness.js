@@ -95,7 +95,7 @@
  }
 
 function validInterval(interval) {
-     if (interval.length < 3) {
+     if (interval < 10) {
              return "okay";
          }
          else {
@@ -107,10 +107,10 @@ function displayValidInterval(inputId, outputId) {
      var input = document.getElementById(inputId).value;
     var outputText = "";
            if (validInterval(input) == "okay") {
-        outputText = Math.ceil(Math.random() * input);
+        outputText = Math.ceil(Math.random() * input) + "..." + "</br> Were you thinking of the same number? If so, begin the exercise task!";
         document.getElementById(outputId).className = "valid";
     } else {
-        outputText = "Choose a number less than 100";
+        outputText = "Oh c'mon! You must really not want to workout right now. Try again and this time, choose a number less than 20 :)";
     document.getElementById(outputId).className = "invalid";
     }
     document.getElementById(outputId).innerHTML = outputText;
