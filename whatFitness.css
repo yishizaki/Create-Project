@@ -1,0 +1,12 @@
+body {
+    color: chartreuse;
+    background-color: bisque;
+    font-family: britannic;
+    text-align: center;
+}
+
+#title {
+    color:navy;
+    font-size: 300%;
+}
+

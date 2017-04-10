@@ -94,6 +94,20 @@
      document.getElementById(outputId).innerHTML = msg;
  }
 
+
+
+var count = "new Number()";
+
+var count = 4;
+
+function startCountdown(){
+       if((count - 1) >= 0){
+               count = count - 1;
+               numberCountdown.innerText = count;
+               setTimeout('startCountdown()',1000).on('click', startCountdown);
+       }
+}
+
 function validInterval(interval) {
      if (interval <= 10 && interval > 1) {
              return "okay";
