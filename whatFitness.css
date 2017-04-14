@@ -10,3 +10,6 @@ body {
     font-size: 300%;
 }
 
+#inputInterval {
+    box-sizing: content-box;
+}

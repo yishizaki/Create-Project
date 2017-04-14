@@ -113,7 +113,7 @@ function validInterval(interval) {
              return "okay";
          }
          else {
-             return "Choose a number less than 100";
+             return "Choose a number less than 10";
          }
      }
 
@@ -124,7 +124,7 @@ function displayValidInterval(inputId, outputId) {
         outputText = Math.ceil(Math.random() * input) + "..." + "</br> Were you thinking of the same number? If so, begin the exercise task!";
         document.getElementById(outputId).className = "valid";
     } else {
-        outputText = "Oh c'mon! You must really not want to workout right now. Try again and this time, choose a number less than 20 :)";
+        outputText = "Oh c'mon! You must really not want to workout right now. Try again and this time, choose a number less than 10 :)";
     document.getElementById(outputId).className = "invalid";
     }
     document.getElementById(outputId).innerHTML = outputText;
