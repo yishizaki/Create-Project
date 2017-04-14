@@ -113,7 +113,7 @@ function validInterval(interval) {
              return "okay";
          }
          else {
-             return "Choose a number less than 10";
+             return "Choose a number less than or equal to 10";
          }
      }
 
@@ -121,10 +121,10 @@ function displayValidInterval(inputId, outputId) {
      var input = document.getElementById(inputId).value;
     var outputText = "";
            if (validInterval(input) == "okay") {
-        outputText = Math.ceil(Math.random() * input) + "..." + "</br> Were you thinking of the same number? If so, begin the exercise task!";
+        outputText = Math.ceil(Math.random() * input) + "..." + "</br> Were you thinking of the same number? If so, do this exercise task!";
         document.getElementById(outputId).className = "valid";
     } else {
-        outputText = "Oh c'mon! You must really not want to workout right now. Try again and this time, choose a number less than 10 :)";
+        outputText = "Oh c'mon! You must really not want to workout right now. Try again and this time, choose a number less than or equal to 10 :)";
     document.getElementById(outputId).className = "invalid";
     }
     document.getElementById(outputId).innerHTML = outputText;
