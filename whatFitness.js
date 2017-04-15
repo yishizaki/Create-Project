@@ -1,6 +1,7 @@
  function randomExercise(outputId) {
      var randomNum = Math.ceil(Math.random() * 30);
      var msg = "";
+
      if (randomNum == 1) {
          msg = "Do 20 jumping jacks.";
      }
