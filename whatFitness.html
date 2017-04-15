@@ -11,17 +11,23 @@
     </div>
     <div id="buttonExercise">
         <p>
-            <button type="button" onclick="randomExercise('output1')">Exercise</button>
+            <button type="button" id="btn" onclick="randomExercise('output1')">Exercise</button>
         </p>
     </div>
+    <div id="bodyGoals">
     <div id="output1">Press the above button to generate your potential task.</div>
-    <p>Odds are 1 to
-        <input type="text" for="inputsm" id="inputInterval"> </p>
+        <div id="odds"><p>Odds are 1 to
+            <input type="text" id="inputInterval"></p></div>
     <p> Think of a number between the interval you chose.</p>
     <p>
-        <button type="button" onclick="displayValidInterval('inputInterval', 'output')">GO!</button>
+        <button type="button" id="btn1" onclick="displayValidInterval('inputInterval', 'output')">GO!</button>
     </p>
     <div id="output"></div>
+    </div>
+    <audio controls>
+  <source src="Ed Sheeran - Shape Of You.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 </body>
 

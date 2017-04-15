@@ -10,3 +10,91 @@ body {
     font-size: 300%;
 }
 
+#bodyGoals {
+    font-size: 200%;
+}
+
+#btn {
+  background: #d134d9;
+  background-image: -webkit-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -moz-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -ms-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -o-linear-gradient(top, #d134d9, #2980b9);
+  background-image: linear-gradient(to bottom, #d134d9, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -o-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: linear-gradient(to bottom, #3cb0fd, #085c94);
+  text-decoration: none;
+}
+
+#btn1 {
+  background: #d134d9;
+  background-image: -webkit-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -moz-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -ms-linear-gradient(top, #d134d9, #2980b9);
+  background-image: -o-linear-gradient(top, #d134d9, #2980b9);
+  background-image: linear-gradient(to bottom, #d134d9, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btn1:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: -o-linear-gradient(top, #3cb0fd, #085c94);
+  background-image: linear-gradient(to bottom, #3cb0fd, #085c94);
+  text-decoration: none;
+}
+
+#inputInterval {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 3px solid #b7b7b7;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font: normal 24px/normal "Times New Roman", Times, serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 3px 3px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#odds {
+   color:navy;
+    font-size: 100%;
+}
