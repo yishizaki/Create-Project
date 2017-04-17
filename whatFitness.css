@@ -1,6 +1,11 @@
 body {
+<<<<<<< HEAD
     color: green;
     background-color: lightpink;
+=======
+    color: chartreuse;
+    background-color: bisque;
+>>>>>>> origin/master
     font-family: britannic;
     text-align: center;
 }
@@ -73,7 +78,11 @@ body {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+<<<<<<< HEAD
     width: 30px;
+=======
+    width: 20px;
+>>>>>>> origin/master
     height: 20px;
     margin: 5px;
     padding: 10px 20px;
