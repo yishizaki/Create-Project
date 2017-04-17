@@ -1,43 +1,34 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <script language="javascript" type="text/javascript" src="whatFitness.js"></script>
-    <script LANGUAGE="JavaScript">
-
-
-var g_iCount = "new Number()";
-
-var g_iCount = 4;
-
-function startCountdown(){
-       if((g_iCount - 1) >= 0){
-               g_iCount = g_iCount - 1;
-               numberCountdown.innerText = g_iCount;
-               setTimeout('startCountdown()',1000);
-       }
-}
-
-</script>
-</head>
+    <link rel="stylesheet" href="whatFitness.css"> </head>
 
 <body>
-    <p>What are the odds you...</p>
-    <p>
-        <button type="button"  onclick="randomExercise('output1')">Exercise</button>
-    </p>
-    <div id="output1">Press the above button to generate your potential task.</div>
-    <p>Odds are 1 to </p>
-    <p>
-        <input type="text" id="inputInterval"> </p>
-    <p>
-        <button type="button" onclick="displayValidInterval('inputInterval', 'output')">GO!</button>
-    </p>
-    <div id="output"></div>
-    <body onLoad = "startCountdown()">
-        <font face="Digital Readout Upright" color="blue" size="7">
-<div align="center" id="numberCountdown"></div>
-</font>
-
+    <div id="title"> What are the odds you... </div>
+    <div id="buttonExercise">
+        <p>
+            <button type="button" id="btn" onclick="randomExercise('output1')">Exercise</button>
+        </p>
+    </div>
+    <div id="bodyGoals">
+        <div id="output1">Press the above button to generate your potential task.</div>
+        <div id="odds">
+            <p>Odds are 1 to
+                <input type="text" id="inputInterval"> </p>
+        </div>
+        <div id="odds">
+            <p>Choose a number between the interval you chose.
+                <input type="text" id="input2"> </p>
+        </div>
+        <p>
+            <button type="button" id="btn1" onclick="displayValidInterval('inputInterval', 'output')">GO!</button>
+        </p>
+        <div id="output"></div>
+    </div>
+    <audio controls>
+        <source src="Ed Sheeran - Shape Of You.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
 </body>
 
 </html>
